@@ -1,0 +1,23 @@
+Rule Engine Flask Application
+Overview
+A Flask-based application for rule-based user eligibility evaluation using Abstract Syntax Trees (AST). This project allows users to define custom rules using logical and comparison operations on user attributes like age, department, and income. The application evaluates these rules against input data provided in JSON format.
+
+What is a Rule Engine?
+A rule engine enables users to define business logic in the form of rules that are evaluated against data to make decisions (e.g., granting access based on conditions like age and department).
+
+Why Use AST?
+An Abstract Syntax Tree (AST) provides a hierarchical representation of the structure of rules, making it easier to parse, process, and evaluate them.
+
+Technologies Used
+Flask: Lightweight web framework for building web applications.
+AST: Python module to parse expressions and represent them as trees.
+Python Operator Module: Defines comparison operations.
+HTML/CSS: For rendering the user interface.
+Project Features
+Rule Creation: Users can enter custom rule strings (e.g., (age > 30 and department == 'Sales')).
+Data Evaluation: Users provide JSON data (e.g., {"age": 35, "department": "Sales"}) to evaluate against defined rules.
+User-Friendly Interface: Simple web interface for rule entry and evaluation.
+Getting Started
+Prerequisites
+Python 3.8+
+Flask (install via pip)
