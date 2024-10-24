@@ -1,0 +1,12 @@
+----Usage
+Enter a rule string in the designated input field.
+Provide JSON data for evaluation in the second input field.
+Click the "Create Rule" button to define your rule.
+Click the "Evaluate Rule" button to see the evaluation result.
+API Endpoints
+POST /create_rule
+Description: Creates a rule from the provided string.
+Body: { "rule_string": "((age > 30 and department == 'Sales') or (age < 25 and department == 'Marketing'))" }
+POST /evaluate_rule
+Description: Evaluates the previously created rule against the provided JSON data.
+Body: { "json_data": "{\"age\": 35, \"department\": \"Sales\", \"salary\": 60000, \"experience\": 6}" }
